@@ -68,8 +68,6 @@ $(document).ready(function(){
 })
 ```
 
----
-
 #Option
 Although it’s lightweight, JsRadioToggle comes with a range of options to customise as you want. Here’s the default options provided. You can add, remove, or completely skip out the options object. It’s up to you.
 
