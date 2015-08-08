@@ -1,5 +1,5 @@
 
-$.fn.radioToggle = function(pengaturan) {
+$.fn.jsRadioToggle = function(pengaturan) {
 
 	// konfigurasi class
 	var settings = $.extend({
