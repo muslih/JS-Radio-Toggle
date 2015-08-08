@@ -3,7 +3,6 @@ $.fn.jsRadioToggle = function(pengaturan) {
 
 	// konfigurasi class
 	var settings = $.extend({
-        toggle: ".toggle",
         name: "tipe",
         target: ".target"
     }, pengaturan );
@@ -13,15 +12,17 @@ $.fn.jsRadioToggle = function(pengaturan) {
 
 
     // trigger data
-    $(settings.toggle+" input:radio[name='"+settings.name+"']").change(function(){
+    // console.log($(this).selector)
+    $($(this).selector+" input:radio[name='"+settings.name+"']").change(function(){
     	// console.log("diklik men");
     	
     	if ($(this).is(':checked')){
     		objToggle = $(this).data('toggle');
-    		console.log(objToggle)
+    		// console.log(objToggle)
     		$(settings.target).hide()
     		$(objToggle+'.target').slideToggle()
     	}
     })
+
 
 };
