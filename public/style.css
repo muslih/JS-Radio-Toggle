@@ -1,0 +1,23 @@
+body{
+	background: #eee;
+}
+
+#wrap{
+	width:60%;
+	margin:auto;
+	background: #fff;
+	padding:10px;
+}
+
+tr{
+	border-bottom: solid 1px #ccc;
+
+}
+
+td{
+	vertical-align: middle !important;
+}
+
+td label{
+	margin-bottom: 0;
+}

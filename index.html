@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Js Radio</title>
+	<!-- style bawaan bootstrap -->
+	<link rel="stylesheet" href="./public/lib/bootstrap/dist/css/bootstrap.min.css">
+	<!-- style tambahan -->
+	<link rel="stylesheet" href="./public/style.css">
+</head>
+<body>
+	<div id="wrap">
+		<h2>Radio Toggle</h2>
+		<table class="table">
+			<tr>
+				<td>
+					<label for="judul">Judul</label>
+				</td>
+				<td>
+					<input type="text" id="judul" class="form-control" name="judul" placeholder="judul">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="tipe">Tipe Tautan</label>
+				</td>
+				<td>
+					<div class="toggle">
+						<label class="radio-inline">
+						  <input type="radio" name="tipe" id="url" value="option1" data-toggle="#url"> URL
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="tipe" id="tautan" value="tautan" data-toggle="#tautan" > Tautan dalam situs(URI)
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="tipe" id="modul" value="modul" data-toggle="#modul"> Modul
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="tipe" id="halaman" value="halaman" data-toggle="#halaman"> Halaman
+						</label>
+					</div>
+				</td>
+			</tr>
+			<tr id="url" class="target">
+				<td><label for="url">URL</label> </td>
+				<td>
+					<input type="text" name="url" class="form-control">
+				</td>
+			</tr>
+			<tr id="tautan" class="target">
+				<td><label for="uri">URI</label> </td>
+				<td>
+					<input type="text" name="uri" class="form-control">
+				</td>
+			</tr>
+			<tr id="modul" class="target">
+				<td><label for="modul">Modul</label> </td>
+				<td>
+					<select name="modul" id="modul" class="form-control">
+						<option value="">Select an option</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr id="halaman" class="target">
+				<td><label for="halaman">Halaman</label> </td>
+				<td>
+					<select name="halaman" id="halaman" class="form-control">
+						<option value="">-- pilih --</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="target">Form Control</label>
+				</td>
+				<td>
+					<select name="target" id="target" class="form-control">
+						<option value="">Jendela saat ini (default)</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<script src="./public/lib/jquery/dist/jquery.min.js"></script>
+	<script src="./public/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="./public/main.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('h2').radioToggle();
+	})
+	</script>
+</body>
+</html>
