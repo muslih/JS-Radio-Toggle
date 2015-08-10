@@ -3,26 +3,42 @@ $.fn.jsRadioToggle = function(pengaturan) {
 
 	// konfigurasi class
 	var settings = $.extend({
+        active: true,
         name: "tipe",
         target: ".target"
     }, pengaturan );
 
-	// sembunyikan target
-	$(settings.target).hide()
+    // #variable mennn
+    // deklarasi selektor toggle
+    selectorToggle = $(this).selector+" input:radio[name='"+settings.name+"']";
 
+    // deklarasi target
+    target = $(settings.target);
+
+    // sembunyikan semua  target
+    target.hide()
+
+    // cek active true atau false 
+    if (settings.active == true) {
+        console.log("Aktif");
+        // tampilkan data yang di chek
+        toggleChange($(selectorToggle+":checked").data('toggle'));
+        // console.log($(selectorToggle+":checked").data('toggle'));
+    }    
 
     // trigger data
-    // console.log($(this).selector)
-    $($(this).selector+" input:radio[name='"+settings.name+"']").change(function(){
+    $(selectorToggle).change(function(){
     	// console.log("diklik men");
-    	
     	if ($(this).is(':checked')){
     		objToggle = $(this).data('toggle');
-    		// console.log(objToggle)
-    		$(settings.target).hide()
-    		$(objToggle+'.target').slideToggle()
+    		console.log(objToggle)
+            toggleChange(objToggle); 
     	}
     })
 
-
+    // fungsi change
+    function toggleChange(objToggle) {
+        target.hide()
+        $(objToggle+'.target').slideToggle()
+    }
 };
