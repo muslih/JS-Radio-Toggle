@@ -74,8 +74,9 @@ Although it’s lightweight, JsRadioToggle comes with a range of options to cust
 ```javascript
 $(document).ready(function(){
 	$('.toggle').jsRadioToggle({
-		name: "tipe",			// Radio input name attributes
-		target: ".target"		// Target object that will triggered when radio clicked
+		active	: true			// enable/disable for selected attributes 	
+		name	: "tipe",		// Radio input name attributes
+		target	: ".target"		// Target object that will triggered when radio clicked
 	});
 })
 ```
