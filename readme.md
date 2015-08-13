@@ -1,5 +1,5 @@
 #JS Radio Toggle
-A very simple jquery plugin to make a toggle content using radio button
+A very simple jquery plugin to make a toggle content using radio button, you can see demo [here](muslih.github.io/JS-Radio-Toggle/)
 
 #How To Use?
 
