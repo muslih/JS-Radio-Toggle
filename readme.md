@@ -1,9 +1,9 @@
-#JS Radio Toggle
+# JS Radio Toggle
 A very simple jquery plugin to make a toggle content using radio button, you can see demo [here](muslih.github.io/JS-Radio-Toggle/)
 
-#How To Use?
+# How To Use?
 
-##Include jQuery and JsRadioToggle
+## Include jQuery and JsRadioToggle
 
 To use JsRadioToggle, you’ll need to make sure both the JsRadioToggle and jQuery scripts are included. If you’ve already got jQuery (you can test by opening your JavaScript console and typing !!window.jQuery — if it says true, you have jQuery), you don’t need to add the first line.
 
@@ -12,7 +12,7 @@ To use JsRadioToggle, you’ll need to make sure both the JsRadioToggle and jQue
 <script src="https://github.com/muslih/JS-Radio-Toggle/blob/master/public/jsradiotoggle.js"></script>
 ```
 
-##Ready Your HTML
+## Ready Your HTML
 
 JsRadioToggle doesn’t need any really awkward markup. In fact, all you need is a `toggle` class, input radio `name` with `data-toggle`, and `.target`. An example of some JsRadioToggle-friendly HTML is on the bottom.
 
@@ -58,7 +58,7 @@ And below are target, make sure you add `target` class and use right `data-toggl
 </tr>
 ```
 
-##Plug It All Together
+## Plug It All Together
 
 We’ve been through so much together, and I’m pleased to say the finish line is near. Our journey is almost over, just one more thing left to do. The JavaScript is on the bottom (make sure to put it in a script tag, and change `.toggle` to whatever your element is).
 
